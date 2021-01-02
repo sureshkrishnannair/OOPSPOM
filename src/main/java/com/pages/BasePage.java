@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class BasePage extends Page {
+	
 
 	public BasePage(WebDriver driver) {
 		super(driver);
@@ -18,11 +19,11 @@ public class BasePage extends Page {
 
 	@Override
 	public String getPageHeader(By locator) {
-		return getElment(locator).getText();
+		return getElement(locator).getText();
 	}
 
 	@Override
-	public WebElement getElment(By locator) {
+	public WebElement getElement(By locator) {
 		WebElement element = null;
 		try {
 			element = driver.findElement(locator);

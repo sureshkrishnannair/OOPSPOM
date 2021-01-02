@@ -28,7 +28,7 @@ public abstract class Page {
 	public abstract String getPageHeader(By locator);
 	
 	/*To get element by passing its locator*/
-	public abstract WebElement getElment(By locator);
+	public abstract WebElement getElement(By locator);
 	
 	public abstract void waitForElementPresent(By locator);
 	
